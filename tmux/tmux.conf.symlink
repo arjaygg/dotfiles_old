@@ -5,6 +5,7 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @plugin 'dreamsofcode-io/catpuccin-tmux'
 run -b '~/.tmux/plugins/tpm/tpm'
 
 set -g default-terminal "xterm-256color"
@@ -98,3 +99,6 @@ set -g window-status-current-format "#[fg=$thm_bg,bg=$thm_green] #I #(icons #{pa
 set -g clock-mode-colour "${thm_blue}"
 set -g mode-style "fg=${thm_pink} bg=${thm_black4} bold"
 set -g set-clipboard on
+
+#bind C-c run "tmux save-buffer - | xclip -i -sel clipboard"
+#bind C-v run "tmux set-buffer "$(xclip -o -sel clipboard)"; tmux paste-buffer"

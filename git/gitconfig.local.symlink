@@ -23,6 +23,16 @@
 	autocrlf = input
 	whitespace = trailing-space,space-before-tab
 	precomposeunicode = true
+	pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    side-by-side = true 
+
 [advice]
 	addEmptyPathspec = false
 [gpg]
@@ -33,6 +43,7 @@
 	autocorrect = 1
 [diff]
 	tool = diffmerge
+	conflictstyle = diff3
 [grep]
 	extendRegexp = true
 	lineNumber = true
@@ -42,9 +53,9 @@
 [submodule]
 	fetchJobs = 4
 [commit]
-	gpgsign = true
+	gpgsign = false
 [tag]
-	gpgsign = true
+	gpgsign = false
 [log]
 	showSignature = false
 [pull]
@@ -55,6 +66,7 @@
 	signOff = true
 [diff]
     tool = nvimdiff
+    colorMoved = default
 [difftool "nvimdiff"]
     cmd = nvim -d "$LOCAL" "$REMOTE"
 [merge]

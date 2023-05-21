@@ -1,2 +1,2 @@
 #!/usr/bin/env fish
-curl -sL https://raw.githubusercontent.com/catppuccin/alacritty/main/catppuccin.yml -o $DOTFILES/alacritty/catppuccin.yml
+curl -sL https://github.com/catppuccin/alacritty/blob/main/catppuccin-mocha.yml -o $DOTFILES/alacritty/catppuccin.yml

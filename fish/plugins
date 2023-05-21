@@ -1,6 +1,14 @@
 jorgebucaran/autopair.fish
-jethrokuan/fzf
 oh-my-fish/plugin-grc
 jorgebucaran/replay.fish
 jorgebucaran/fisher
 catppuccin/fish
+budimanjojo/tmux.fish
+gazorby/fish-abbreviation-tips
+patrickf1/fzf.fish
+reitzig/sdkman-for-fish@v1.4.0
+gazorby/fifc
+blackjid/plugin-kubectl
+ankitsumitg/docker-fish-completions
+wfxr/forgit
+jhillyerd/plugin-git
