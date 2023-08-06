@@ -311,3 +311,9 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+# Media control
+bindsym $mod+Shift+Left exec playerctl previous
+bindsym $mod+Shift+Right exec playerctl next
+bindsym $mod+Shift+Down exec playerctl play-pause
+
